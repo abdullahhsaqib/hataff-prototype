@@ -22,14 +22,14 @@ errors += ['Duplicate ID: '+key for key,n in Counter(page.ids).items() if n>1]
 errors += ['Missing anchor: '+key for key in page.targets if key not in page.ids]
 errors += ['Missing asset: '+key for key in page.assets if not urlsplit(key).scheme and not(root/unquote(key)).is_file()]
 if page.h1!=1:errors.append('Expected one H1')
-for filename in ('style.css','assets/fonts/fonts.css'):
+for filename in ('style.css','assembly.css','assets/fonts/fonts.css'):
     css=(root/filename).read_text()
     for url in re.findall(r'url\([\"\']?([^\)\"\']+)',css):
         if urlsplit(url).scheme:errors.append('Remote CSS asset: '+url)
         elif not(root/filename).parent.joinpath(url).is_file():errors.append('Missing CSS asset: '+url)
 for block in re.findall(r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>',html,re.S):json.loads(block)
 if 'innerHTML=' in (root/'script.js').read_text():errors.append('Unexpected dynamic HTML content')
-if len(re.findall(r'class="service reveal"',html))!=8:errors.append('Expected all eight static services')
+if len(re.findall(r'class="service reveal[^"]*"',html))!=8:errors.append('Expected all eight static services')
 if not(root/'.nojekyll').exists():errors.append('Missing .nojekyll')
 if errors:
     raise SystemExit('\n'.join(errors))

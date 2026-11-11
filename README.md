@@ -1,6 +1,6 @@
 # Hataff Security — production static site
 
-Version 3: normal scrolling, full photographs and lightweight interaction animations.
+Version 4: section-triggered assembly animations, normal scrolling and full photographs.
 
 A self-contained HTML, CSS and JavaScript website. No npm, framework, build step, API key or paid service is required. Photographs and fonts are bundled locally.
 
@@ -40,7 +40,8 @@ Then visit http://localhost:8000. No Python packages are needed. This server is 
 
 - `index.html`: all business content, navigation, eight services, six principles, six sectors, contacts and metadata. Content remains readable without JavaScript.
 - `style.css`: responsive layout, camouflage treatment, brief entrance/hover/dialog transitions and reduced-motion support.
-- `script.js`: mobile navigation, accessible gallery and enquiry validation. No scroll listeners or animation-frame scene loops.
+- `script.js`: mobile navigation, accessible gallery and enquiry validation.
+- `assembly.css`, `assembly.js`: bounded section-entry assembly choreography, component construction and frame-corner separation.
 - `assets/army-pattern.svg`: local vector camouflage inspired by the supplied reference.
 - `assets/`: original website photographs/logo, sharing image, icon and local fonts with licence notices.
 - `robots.txt`, `sitemap.xml`: search crawler configuration.
@@ -55,7 +56,7 @@ The form validates a name, a 7–15-digit phone number and a selected service. I
 
 ## Motion, photography and accessibility
 
-Scrolling is completely normal. There are no pinned scenes, scroll-controlled masks, parallax, per-letter scroll effects, background drift or service-image swapping. The opening has a brief entrance animation, navigation and buttons have hover/focus feedback, service accordions use native details/summary with a rotating icon, and the photo dialog fades in quickly. Reduced-motion preferences disable transitions/animations.
+Scrolling is completely normal. There are no pinned scenes, scroll-controlled masks, parallax, per-letter scroll effects, background drift or service-image swapping. Headings assemble word by word, content panels align from opposing directions, and photo frame corners construct around intact images. The services include a People / Procedure / Equipment construction sequence. Effects trigger once when entering view and settle within roughly one second; they do not scrub or delay scrolling. The opening, native service accordions and photo dialog also have short interaction transitions. Reduced-motion preferences disable transitions/animations.
 
 Every team photograph is shown at its natural proportions, using automatic height and contain sizing. Captions sit below gallery photographs; no text, masks or zoom effects cover faces. On phones, photographs appear in the vertical page flow and may naturally extend below the viewport, but the source image itself is not cropped.
 
