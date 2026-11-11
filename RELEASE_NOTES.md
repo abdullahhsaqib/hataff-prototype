@@ -1,3 +1,13 @@
+# Version 2 — enhanced imagery and extended motion
+
+- Replaced guards, tactical and heritage photographs with the three user-supplied enhanced PNGs, converted to optimised WebP; original subjects/content have not been independently authenticated.
+- Added a local vector camouflage pattern in olive, black and gold, with restrained drift behind selected sections.
+- Added desktop heritage pinning with reversible per-letter construction and separation, a portrait mask and story-copy assembly. On smaller/shorter screens the heritage stays in normal flow.
+- Added scroll-selected service imagery reconstructed in five alternating segments, gold divider construction, principles/sector rows, gallery masks and a contact-panel reveal.
+- Motion pause removes the new animation offsets, restores full text visibility and collapses the pinned chapter.
+- Desktop and narrow iframe layout visually reviewed; motion pause/reset and static checks passed. Physical iOS/Android and hosted GitHub validation remain deployment checks.
+- GitHub upload structure remains unchanged. Upload the entire contents of the hataff folder, including the new motion files and army-pattern.svg.
+
 # Release notes — 11 November 2026
 
 ## Included

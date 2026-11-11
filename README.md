@@ -1,5 +1,7 @@
 # Hataff Security — production static site
 
+Version 2: enhanced photography, army pattern and extended scroll choreography.
+
 A self-contained HTML, CSS and JavaScript website. No npm, framework, build step, API key or paid service is required. Photographs and fonts are bundled locally.
 
 ## Upload to GitHub
@@ -39,7 +41,9 @@ Then visit http://localhost:8000. No Python packages are needed. This server is 
 - `index.html`: all business content, navigation, eight services, six principles, six sectors, contacts and metadata. Content remains readable without JavaScript.
 - `style.css`: base layout and responsive styles.
 - `cinematic.css`: cinematic design, photographic scroll sequence, touch targets and motion fallbacks.
-- `script.js`: navigation, scroll progress, motion control, accessible gallery and form validation.
+- `script.js`: navigation, opening scroll progress, motion control, accessible gallery and form validation.
+- `motion.css`, `motion.js`: army pattern, reversible heritage type assembly, service image segments, row construction, gallery masks and contact reveal.
+- `assets/army-pattern.svg`: local vector camouflage inspired by the supplied reference.
 - `assets/`: original website photographs/logo, sharing image, icon and local fonts with licence notices.
 - `robots.txt`, `sitemap.xml`: search crawler configuration.
 - `404.html`: missing-page screen.
@@ -53,7 +57,7 @@ The form validates a name, a 7–15-digit phone number and a selected service. I
 
 ## Motion and accessibility
 
-The opening is a three-chapter photographic sequence, not a 3D animation. Scroll uses the browser's native scrolling. A Pause motion button is provided, and OS reduced-motion preferences are respected by default. The gallery uses a native modal dialog, Escape dismissal and focus return. Mobile navigation closes on selection/Escape. Images have dimensions and alt text; fonts are local with swap rendering.
+The opening is a three-chapter photographic sequence. The heritage chapter assembles and separates letterforms as you scroll; services use alternating image segments, principles draw their dividers, and gallery/contact panels reveal through masks. These are native browser effects, not 3D video. Scroll uses the browser's native scrolling. A Pause motion button is provided, and OS reduced-motion preferences are respected by default. The gallery uses a native modal dialog, Escape dismissal and focus return. Mobile navigation closes on selection/Escape. Images have dimensions and alt text; fonts are local with swap rendering.
 
 ## Validation
 
@@ -68,4 +72,4 @@ See `RELEASE_NOTES.md` for checks performed and remaining deployment verificatio
 
 ## Asset rights
 
-Business content and photographs come from the existing Hataff website and were retained at the user's direction. Their ownership/licensing and business claims have not been independently authenticated. Font licence notices are included in `assets/fonts/`. No broader open-source licence is granted for the company branding or photographs.
+Business content comes from the existing Hataff website. Three user-supplied enhanced images replace the previous lower-resolution photographs; the logo is retained. Their ownership/licensing and business claims have not been independently authenticated. Font licence notices are included in `assets/fonts/`. No broader open-source licence is granted for the company branding or photographs.
