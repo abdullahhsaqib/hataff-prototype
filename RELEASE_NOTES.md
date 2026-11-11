@@ -1,45 +1,19 @@
-# Version 2 — enhanced imagery and extended motion
+# Version 3 — normal scrolling and full photographs
 
-- Replaced guards, tactical and heritage photographs with the three user-supplied enhanced PNGs, converted to optimised WebP; original subjects/content have not been independently authenticated.
-- Added a local vector camouflage pattern in olive, black and gold, with restrained drift behind selected sections.
-- Added desktop heritage pinning with reversible per-letter construction and separation, a portrait mask and story-copy assembly. On smaller/shorter screens the heritage stays in normal flow.
-- Added scroll-selected service imagery reconstructed in five alternating segments, gold divider construction, principles/sector rows, gallery masks and a contact-panel reveal.
-- Motion pause removes the new animation offsets, restores full text visibility and collapses the pinned chapter.
-- Desktop and narrow iframe layout visually reviewed; motion pause/reset and static checks passed. Physical iOS/Android and hosted GitHub validation remain deployment checks.
-- GitHub upload structure remains unchanged. Upload the entire contents of the hataff folder, including the new motion files and army-pattern.svg.
+## Changes
 
-# Release notes — 11 November 2026
+- Removed all pinned scenes, scroll event listeners, requestAnimationFrame scene loops, per-letter reconstruction, image-mask wipes, parallax and animated service-image swapping.
+- Removed the obsolete cinematic.css, motion.css and motion.js files; the site now uses one stylesheet and a small interaction script.
+- Added a short one-time opening entrance, restrained hover/focus states, native service accordions and a short photo-dialog entrance. Reduced-motion preferences disable animation.
+- Rebuilt the hero and heritage as normal document sections. Every team photograph uses its original proportions and contain sizing; gallery captions are below images. No zoom effects crop faces.
+- Retained the supplied enhanced photographs, olive/gold camouflage, business content and contact information.
 
-## Included
+## Verification
 
-- Three pinned photographic chapters using native scroll, transform and image masks.
-- Local photographs, logo and self-hosted fonts; no external font/CDN dependency.
-- All eight services and six principles in the initial HTML, independent of JavaScript.
-- Responsive navigation with Escape/outside-click dismissal and active section indication.
-- Motion pause/enable control and automatic reduced-motion default.
-- Native photo dialog with an accessible caption, Escape dismissal and focus return.
-- Required name, service and phone validation; whitespace name and digit-count checks.
-- Same-tab WhatsApp handoff, avoiding popup blockers. No message is automatically sent.
-- Descriptive metadata, canonical URL, Open Graph, Twitter card, organisation JSON-LD, sitemap, robots file, favicon and sharing image.
-- Image dimensions, asynchronous decoding, primary-image preload and deferred script.
-- Static GitHub Pages root deployment with .nojekyll and a custom 404 page.
-- Maintenance checks and a helper to update the final domain metadata.
+JavaScript syntax and static asset/anchor/metadata checks passed. Desktop browser review covered service expansion and full guard photograph framing. Narrow browser iframe checks at 320, 390 and 768 CSS-pixel frame widths showed no horizontal document overflow (usable viewport width excludes the browser scrollbar). Mobile navigation opened and closed, and image sizing was checked against natural image proportions. Browser review does not replace physical iOS/Android testing.
 
-## Verification performed
+## Upload
 
-- JavaScript syntax check passed.
-- Dependency-free release check passed: unique IDs, internal anchor targets, local files/font references, image alt attributes, structured data and eight static service entries.
-- Desktop Chrome: opening, scroll-driven chapters, return navigation, motion off/on, service preselection, gallery opening/Escape/focus return.
-- Narrow viewport in a 390 × 844 browser iframe (375 px usable content width with scrollbar): hero and contact layout, menu open/close, navigation to contact and required-field rejection. No horizontal overflow found at the contact section.
-- Invalid short phone rejected in browser without contacting WhatsApp.
-- Script-disabled sandbox: service and principle content remains present; long pinned track collapses; contact alternatives remain available and form is disabled.
-- Local font files and licence texts are present. No Google Fonts network requests are required.
-- A mobile colour regression discovered during preparation was corrected and visually rechecked.
+Upload the contents of the hataff folder to the repository root. Replace index.html, style.css and script.js together. Old cinematic.css, motion.css and motion.js can be deleted from the repository; the new HTML no longer loads them. Retain assets/, .nojekyll, robots.txt and sitemap.xml. Deployment and domain instructions are in README.md.
 
-## Deployment checks still required
-
-This package is ready to upload as a static website; it has not been deployed to the user's GitHub repository. After upload, verify the final URL, HTTPS, custom-domain DNS if used, and metadata matching that URL. Recheck WhatsApp opening on the actual device without sending a test enquiry to staff.
-
-Physical iPhone/Safari and Android devices, assistive-technology testing and a full automated WCAG audit were not available in this review. No Lighthouse/Core Web Vitals score or search ranking is claimed. Source photographs remain limited by their original resolution.
-
-The contact details, service claims, founding/licensing statements and photographs were retained from the existing company website. No additional clients, certifications or performance claims were invented.
+The valid enquiry still hands off to WhatsApp; no test enquiry was sent. Physical-device behaviour, final hosting, HTTPS and domain configuration remain deployment checks. No measured speed score or universal compatibility claim is made.
